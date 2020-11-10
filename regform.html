@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+            color: #1a2e35;
+        }
+
+        .user-form {
+            max-width: 320px;
+            text-align: center;
+        }
+
+        .user-form h1 {
+            margin: 0;
+            color: #fe5454;
+        }
+
+        .external-signup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+        }
+
+        .external-signup img {
+            width: 15px;
+            height: 15px;
+            border: 1px solid red;
+            border-radius: 50%;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .simple-text {
+            margin-bottom: 10px;
+        }
+
+        .label-item input[type="text"],
+        .label-item input[type="password"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 6px 13px;
+            margin: 5px 0;
+            outline: none;
+            background-color: rgba(32, 33, 36, .04);
+            border: 2px solid rgba(32, 33, 36, .04);
+            border-radius: 3px;
+        }
+
+        .label-item.terms-conditions {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .label-item.btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .label-item.btn-container>* {
+            width: 48%;
+            padding: 8px 10px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button.btn-signup {
+            color: #fff;
+            background-color: #fe5454;
+            border: 1px solid #fe5454;
+        }
+
+        button.btn-signup:hover {
+            background-color: #FE546A;
+        }
+
+        button.btn-signin {
+            color: #fe5454;
+            background-color: #fff;
+            border: 1px solid #fe5454;
+        }
+
+        button.btn-signin:hover {
+            background-color: #FFFFE9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="user-form">
+        <h1>Create Account</h1>
+        <div class="external-signup">
+            <img src="./logo512.png" alt="g">
+            <img src="./logo512.png" alt="g">
+            <img src="./logo512.png" alt="g">
+            <img src="./logo512.png" alt="g">
+        </div>
+        <div class="simple-text">or use your email for registration:</div>
+        <form action="">
+            <div class="label-item userName">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="label-item userEmail">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="label-item password">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="label-item terms-conditions">
+                <input type="checkbox">
+                <label>I agree to the <a href="#">Terms</a> and <a href="#">Privacy policy</a></label>
+            </div>
+            <div class="label-item btn-container">
+                <button class="btn-signup">Sign Up</button>
+                <button class="btn-signin">Sign In</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
